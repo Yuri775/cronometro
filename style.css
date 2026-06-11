@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
 
 :root {
-  --cor-de-fundo: #1e1e1e;
-  --verde: #6fff57;
+  --cor-de-fundo: #000000;
+  --verde: #3e5500;
   --branco: #ffffff;
-  --botao-ativo: #3a375e;
+  --botao-ativo: #1f1a55;
   --botao-inativo: rgba(58, 55, 94, 0.5);
-  --texto-fundo: rgba(58, 55, 94, 0.3);
+  --texto-fundo: rgba(11, 10, 20, 0.3);
 }
 
 body {
@@ -59,19 +59,23 @@ body {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  /* Código omitido */  .botoes {
+  .botoes {
     display: flex;
   }
 
   .botao:last-child {
     border-radius: 0 40px 0 0;
   }
-    .botao:first-child {
+  .botao:first-child {
     border-radius: 40px 0 0 0;
   }
-}.ativo {
+}
+.ativo {
   background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--verde);
+}
+.abas-textos {
+  background-color: var(--texto-fundo);
 }
 .abas-textos {
   background-color: var(--texto-fundo);
@@ -82,6 +86,10 @@ body {
   background-color: var(--botao-ativo);
   border-bottom: 4px solid var(--verde);
 }
+.aba-conteudo.ativo {
+  display: block;
+}
+
 .aba-conteudo-titulo-principal {
   font-size: 28px;
   text-align: center;
@@ -90,4 +98,11 @@ body {
   text-align: center;
   color: var(--verde);
   text-transform: uppercase;
+}
+.contador {
+  font-size: 20px;
+  text-align: center;
+}
+.aba-conteudo {
+  display: none;
 }
